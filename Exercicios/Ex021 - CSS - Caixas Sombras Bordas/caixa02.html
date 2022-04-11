@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            margin: 0px;
+        }
+
+        header{
+            background-color: rgba(190, 190, 190, 0.651);
+            padding: 10px;
+            margin: 10px 10px 40px 10px;
+            box-shadow: 5px 5px 15px #918c8cb0;        
+        }
+/*
+        h1{
+            box-shadow: inset 2px 1px 14px 6px black;
+        }
+*/
+        nav{
+            background-color: rgb(105, 105, 105) ;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315)
+        }
+
+        nav > a{
+            text-decoration: none;
+            color:rgb(216, 208, 208);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgba(212, 212, 212, 0.753);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 15px #0000005b;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.315)
+        }
+
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgba(128, 128, 128, 0.562);
+        }
+
+        footer{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: bold;
+            background-color: black;
+            color:rgb(195, 204, 75);
+            text-align:center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgb(195, 204, 75);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+
+        </section>
+        <section id= "notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione dolores temporibus incidunt animi adipisci placeat, odit illo quis et tempore a laborum omnis ea, non dignissimos atque sit eum?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
