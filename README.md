@@ -5,4 +5,4 @@
  
  Testando atualização.
 
- <a href="https://grareis.github.io/HTML-CSS/exercicios/ex001/index.html">Executar Exercicio 001</a>
+ <a href="https://grareis.github.io/HTML-CSS/Exercicios/Ex001/index.html">Executar Exercicio 001</a>
