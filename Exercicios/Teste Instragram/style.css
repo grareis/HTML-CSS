@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.cena{
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 230px; 
+}
+.cena img{
+    position: absolute;
+}
+
+.cidade{
+    bottom: -3px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.aviao{
+    animation: aviao-move 15s;
+    linear forwards;
+    left: -50%;
+    top: 50%;
+    width: 45%;
+}
+
+.barco{
+    animation: barco-move 20s;
+    bottom: 0;
+    linear forwards;
+    right: -50px;
+    width: 30%;
+}
+
+.nuvem{
+    animation: nuvens-move 22s;
+    linear forwards;
+
+}
+
+.nuvem{
+    left: 30px;
+    top: 0;
+    width: 70px;
+}
+.nuvem2{
+    left: 125px;
+    top: 20px;
+    width: 25px;
+}
+
+/*@keyframes aviao-move{
+    to{
+        transform: translate(300px, -100px);
+    }
+}*/
+
+@keyframes nuvens-move{
+    to{
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes barco-move{
+    to{
+        transform: translateX(-300px);
+    }
+}
+
+

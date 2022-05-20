@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência de imagens animadas</title>
+    <style>
+        .cena{
+            background: url("imagens/espaco.jpg");
+            background-size: cover;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            width: 450px;
+        }
+
+        .cena img{
+            position: absolute;
+        }
+
+        .estrelas{
+            animation: estrelas-rotate 100s linear forwards;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            filter: blur(.3vw);
+        }
+
+        .astronauta{
+            animation: astronauta-move 20s forwards;
+            right: 10px;
+            top: 40px;
+            width: 40px;
+        }
+
+        .nave{
+            animation: nave-move 10s 5s forwards;
+            left: 120px;
+            transform: scale(0);
+            top: 60px;
+            width: 50px;
+        }
+
+        .cometa{
+            animation: cometa-move 5s 4s forwards;
+            left: 550px;
+            top: 70px;
+            width: 150px;
+        }
+
+        
+        .lua{
+            bottom: -80px;
+            left: -80px;
+            width: 250px;
+        }
+
+        @keyframes astronauta-move{
+            to{
+               transform:  
+               translate(-300px, -80px)
+               rotate(-360deg);
+            }
+        }
+
+        @keyframes nave-move{
+            25%{
+               transform:  
+               scale(.5)
+               translate(-170px, -25px);
+            }
+            50%, 100%{
+                transform: 
+                scale(4)
+                translate(250px, 300px);
+            }
+        }
+
+        @keyframes estrelas-move{
+            to{
+               transform:  
+               rotate(360deg);
+            }
+        }
+
+        @keyframes cometa-move{
+            
+            100%, 45%{
+                transform: 
+                translate(-550px, 300px);
+            }
+        }
+             
+    
+    </style>
+</head>
+<body>
+    <div class="cena">
+        <img src="imagens/estrelas.png" class="estrelas">
+        <img src="imagens/nave_espacial.png" class="nave">
+        <img src="imagens/astronauta.png" class="astronauta">
+        <img src="imagens/cometa.png" class="cometa">
+        <img src="imagens/lua.png" class="lua">      
+    </div>
+</body>
+</html>
